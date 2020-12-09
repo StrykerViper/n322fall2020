@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Housing</ion-title>
+    
+      <ion-icon [routerLink]="['/home']" slot="start" name="arrow-back"></ion-icon>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item  color="medium"><ion-label class="ion-text-center">Enter your housing costs</ion-label></ion-item>
+  <ion-list>
+    <ion-item>
+    <ion-label position="floating" >Mortgage</ion-label>
+    <ion-input type="number" [(ngModel)]="mortgage" placeholder="$"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating" >Rent</ion-label>
+    <ion-input type="number" [(ngModel)]="rent" placeholder="$"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating" >Insurance</ion-label>
+    <ion-input type="number" [(ngModel)]="homeInsurance" placeholder="$"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating" >Repair</ion-label>
+    <ion-input type="number" [(ngModel)]="homeRepair" placeholder="$"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating" >HOA</ion-label>
+    <ion-input type="number" [(ngModel)]="hoa" placeholder="$"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating" >Utilites</ion-label>
+    <ion-input type="number" [(ngModel)]="utilites" placeholder="$"></ion-input>
+  </ion-item>
+  <ion-item lines="none" class="center">
+    <ion-col>
+    <ion-button class="center" (click)="addHousingBudget()">Submit Budget</ion-button>
+  </ion-col>
+  </ion-item>
+  </ion-list>
+</ion-content>

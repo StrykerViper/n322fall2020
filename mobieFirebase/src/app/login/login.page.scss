@@ -1,0 +1,42 @@
+.getImg{
+    background-image: 
+      url(../../assets/images/loginBackGround.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+ion-content{
+    --background: none;
+    
+}
+ion-item{
+    --background: none;
+    color: white;
+}
+.centerTitle{
+    text-align: center;
+    color: white;
+    
+}
+.centerHeader{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}.centerButton{
+    // background-color: yellowgreen;
+    width: 100%;
+}
+.center{
+    // background-color: sandybrown !important;
+    width: 100%;
+    display: flex ;
+    justify-content: space-between;
+    // align-items: center  !important;
+  }
+
+  .ripple-parent {
+    position: relative;
+    overflow: hidden;
+  }

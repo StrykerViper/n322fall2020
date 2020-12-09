@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Personal</ion-title>
+    <ion-icon [routerLink]="['/home']" slot="start" name="arrow-back"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item  color="medium"><ion-label class="ion-text-center">Enter your personal costs</ion-label></ion-item>
+  <ion-list>
+    <ion-item>
+    <ion-label position="floating" >Cell/TV/Internet</ion-label>
+    <ion-input type="number" [(ngModel)]="cell" placeholder="$"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating" >Loans</ion-label>
+    <ion-input type="number" [(ngModel)]="loans" placeholder="$"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating" >Food</ion-label>
+    <ion-input type="number" [(ngModel)]="food" placeholder="$"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating" >Entertainment</ion-label>
+    <ion-input type="number" [(ngModel)]="entertainment" placeholder="$"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating" >Pet</ion-label>
+    <ion-input type="number" [(ngModel)]="pet" placeholder="$"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating" >Clothing</ion-label>
+    <ion-input type="number" [(ngModel)]="clothing" placeholder="$"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating" >Other</ion-label>
+    <ion-input type="number" [(ngModel)]="other" placeholder="$"></ion-input>
+  </ion-item>
+  <ion-item lines="none" class="center">
+    <ion-col>
+    <ion-button class="center" (click)="addPersonalBudget()" >Submit Budget</ion-button>
+  </ion-col>
+  </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title class="ion-text-center">
+      Budget the Future
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="logOut()" [routerLink]="['/login']"  >
+        Log Out
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content color="dark" >
+
+  
+
+  <!-- <ion-button (click)="getData()"> Get Data</ion-button> -->
+  
+  
+  <ion-item color="dark">
+    <ion-label position="floating">
+      Monthy Income
+    </ion-label>
+    <ion-input type="number" [(ngModel)]="monthly" placeholder="$"></ion-input>
+  </ion-item>
+
+  <ion-list color="dark">
+    <ion-item [routerLink]="['/housing']" color="medium">
+        <ion-label>
+          Housing
+        </ion-label>
+    </ion-item>
+
+    <ion-item [routerLink]="['/auto']" color="medium">
+      <ion-label>
+        Auto
+      </ion-label>
+    </ion-item>
+
+    <ion-item [routerLink]="['/personal']" color="medium">
+      <ion-label>
+        Personal
+      </ion-label>
+    </ion-item>
+
+    <ion-item [routerLink]="['/savings']" color="medium">
+      <ion-label>
+        Savings
+      </ion-label>
+    </ion-item>
+    
+  </ion-list>
+
+  <ion-button fill="solid" color="secondary" (click)="getTotal()" expand="block">
+    Get Total
+  </ion-button>
+  <ion-item  color="dark">
+    <ion-col>
+    <!-- <div [(ngModel)]="valTotal" class="ion-text-center">
+      <h3>Total Savings</h3>
+      {{autototal}}
+    </div> -->
+  </ion-col>
+  </ion-item>
+
+</ion-content>

@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="dark" >
+    <ion-title class="centerTitle">Budget The Future</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="getImg">
+  
+  <ion-item lines="none" class="header">
+    <ion-title class="centerHeader">Login</ion-title>
+  </ion-item>
+  <ion-item lines="none" class="formWrap" >
+    <ion-label color="light"  position="floating">Email</ion-label>
+    <ion-input  type="email" [(ngModel)]="email" id="eMail"></ion-input>
+    <ion-label color="light" position="floating">Password</ion-label>
+    <ion-input type="password" [(ngModel)]="password" id="pWord"></ion-input>
+      <!-- <ion-item lines="none" class="centerButton" > -->
+        <!-- <ion-col class="center"> -->
+        <!-- <ion-button expand="block" type="submit" [routerLink]="['/home']" (click)="logIn()"> Log in</ion-button>
+        <ion-button expand="block" type="submit" [routerLink]="['/home']" (click)="signUp()"> Sign Up</ion-button> -->
+        
+      <!-- </ion-col> -->
+      <!-- </ion-item> -->
+  </ion-item>
+  <ion-button class="ion-activatable ripple-parent" color="light" fill="outline" expand="block" type="submit"  (click)="logIn()"> Log in <ion-ripple-effect></ion-ripple-effect></ion-button>
+  <ion-button class="ion-activatable ripple-parent" color="light" fill="outline" expand="block" type="submit"  (click)="signUp()"> Sign Up <ion-ripple-effect></ion-ripple-effect> </ion-button>
+
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "mobieFirebase",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
